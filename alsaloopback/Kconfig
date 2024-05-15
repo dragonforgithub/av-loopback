@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config AUDIO_LOOPBACK
+	tristate "Audio loopback support"
+	depends on SND
+	select SND_PCM
+
+	help
+	  This is a alsa driver for audio loopback based audio capture/output devices.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called alsaloopback
+

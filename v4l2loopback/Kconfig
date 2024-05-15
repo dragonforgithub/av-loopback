@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config VIDEO_LOOPBACK
+	tristate "Video loopback support"
+	depends on VIDEO_V4L2
+
+	help
+	  This is a video4linux2 driver for video loopback based video capture/output devices.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called v4l2loopback
+
